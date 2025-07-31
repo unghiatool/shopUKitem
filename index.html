@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tool Admin Uông Nghĩa</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        .box {
+            background: #ffffffcc;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 500px;
+            margin: 10px 0;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            transition: transform 0.2s ease;
+        }
+        .box:hover {
+            transform: scale(1.02);
+        }
+        .box h2 {
+            color: #4ecca3;
+            margin-bottom: 10px;
+        }
+        .box a, .box button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #4ecca3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .box a:hover, .box button:hover {
+            background: #3bb495;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #4ecca3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .top-left-info {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 12px 18px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-size: 14px;
+            line-height: 1.6;
+            z-index: 9999;
+        }
+        .top-left-info a {
+            color: #4ecca3;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Thông tin góc trái trên -->
+<div class="top-left-info">
+    <strong>Người tạo:</strong> Uông Nghĩa<br>
+    <a href="https://www.tiktok.com/@unghia._" target="_blank">Kênh TikTok</a>
+    <a href="https://www.youtube.com/@Uong-Nghia1011" target="_blank">Kênh YouTube</a>
+    <a href="https://www.facebook.com/ungnghiaA" target="_blank">Facebook</a>
+</div>
+
+<h1>🛠️ Thông tin 🛠️</h1>
+
+<div class="box">
+    <h2>🔧 Code Setup trên Termux</h2>
+    <button onclick="copySetupCodeTermux()">Copy Code</button>
+</div>
+
+<div class="box">
+    <h2>📱 Link Termux</h2>
+    <a href="https://play.google.com/store/apps/details?id=com.termux&hl=vi"_blank">Link tải Termux</a>
+</div>
+
+<div class="box">
+    <h2>🛠️ Link Tool</h2>
+    <a href="https://drive.google.com/file/d/1582NykPVq-GkcKxtZO1huHKmtnYzeCaP/view?usp=drivesdk" target="_blank">Tool Auto Golike</a><br>
+    <a href="https://discord.com/channels/1393489133695144080/1396350636005789769" target="_blank">Tool Reg Facebook</a><br>
+    </div>
+</div>
+<div class="footer">
+    <p>Admin: <b>Uông Nghĩa</b></p>
+    <p>TikTok: <a href="https://www.tiktok.com/@unghia._" target="_blank">https://www.tiktok.com/@unghia._</a></p>
+</div>
+
+<script>
+    function copySetupCodeTermux() {
+        const setupCode = `🔥Lệnh Setup (Python)  
+termux-setup-storage && pkg update && pkg upgrade -y && pkg install python php && pkg install python-pip && pip install --upgrade pip 
+👉Nó Hiện "  [Y/n] hoặc [Y/I/N/O/D/Z] " thì nhấn {y} hết cho mình👈
+
+👉Cách Fix Lỗi Chưa Tải Thư Viện Python Khi Gặp Lỗi No Module named 👈
+pip install "tên_thư_viện"
+
+👉Lệnh Nâng Cấp Python 3.11 ⬆ 3.12👈
+pkg install python --upgrade  
+
+👉Lệnh Hạ Python 3.12 ⬇ 3.11👈
+pkg i tur-repo -y && pkg uninstall python -y && pkg uninstall python3.11 -y && pkg install python3.11 -y && mv -f /data/data/com.termux/files/usr/bin/python3.11 /data/data/com.termux/files/usr/bin/python`;
+        navigator.clipboard.writeText(setupCode.trim()).then(function () {
+            alert("✅ Đã copy Code Setup trên Termux!");
+        }, function (err) {
+            alert("❌ Lỗi copy: " + err);
+        });
+    }
+</script>
+
+</body>
+</html>
