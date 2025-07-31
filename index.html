@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopUKitem</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 10vh; /* Đảm bảo đủ chiều cao */
+            margin: 0; /* Loại bỏ margin mặc định */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        .box {
+            background: #ffffffcc;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 500px;
+            margin: 10px 0;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            transition: transform 0.2s ease;
+        }
+        .box:hover {
+            transform: scale(1.02);
+        }
+        .box h2 {
+            color: #4ecca3;
+            margin-bottom: 10px;
+        }
+        /* Cập nhật CSS cho các nút có ảnh và chữ */
+        .box .button-with-icon {
+            display: inline-flex; /* Quan trọng để ảnh và chữ cùng hàng */
+            align-items: center; /* Canh giữa theo chiều dọc */
+            justify-content: center; /* Canh giữa nội dung */
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #4ecca3; /* Màu nền nút */
+            color: white; /* Màu chữ */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none; /* Loại bỏ gạch chân mặc định của link */
+            transition: background 0.3s ease;
+        }
+        .box .button-with-icon:hover {
+            background: #3bb495; /* Màu nền khi hover */
+        }
+        .box .button-with-icon img {
+            width: 20px; /* Kích thước icon */
+            height: 20px;
+            margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+            vertical-align: middle; /* Đảm bảo căn chỉnh tốt */
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #4ecca3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .top-left-info {
+            position: fixed;
+            top: 550px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 12px 18px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-size: 14px;
+            line-height: 1.6;
+            z-index: 9999;
+        }
+        .top-left-info a {
+            color: #4ecca3;
+            text-decoration: none;
+            display: block;
+        }
+        .box h2 img {
+            width: 260px;  /* Đặt chiều rộng cố định */
+            height: 150px; /* Đặt chiều cao cố định */
+            object-fit: cover; /* Quan trọng: Ảnh sẽ lấp đầy không gian, có thể bị cắt một phần */
+            vertical-align: middle;
+        }
+        .img {
+            width: 400px;
+            hight: 200px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-left-info">
+    <strong>Admin:</strong> Uông Nghĩa, Hoàng Bách<br>
+    <a href="https://www.tiktok.com/@unghia._" target="_blank">Kênh TikTok</a>
+    <a href="https://www.youtube.com/@Uong-Nghia" target="_blank">Kênh YouTube</a>
+    <a href="https://www.facebook.com/ungnghiaA" target="_blank">Facebook Admin Unghia</a>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank">Facebook Admin HoangBach</a>
+</div>
+
+<h1><img src="Shop.png" alt=" " class="img"></h1>
+<h1>ShopUKitem</h1>
+
+<div class="box">
+    <h2><img src="Kit xanh.png" alt="Corrupted kitsune"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Corrupted Kitsune')"> Corrupted Kitsune(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="T-rex.png" alt="T-rex"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('T-rex')"> 🦖T-rex(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Disco bee.png" alt="Disco bee"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Disco bee')"> 🐝Disco bee(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Queen bee.png" alt="Queen bee"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Queen bee')"> 🐝Queen bee(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Butterfly.png" alt="Butterfly"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Butterfly')"> 🦋Butterfly(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Panda.png" alt="Panda"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Panda')"> 🐼Panda(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Moon cat.png" alt="Moon cat"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Moon cat')"> 🐈‍⬛Moon cat(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Dragonfly.png" alt="Dragonfly"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Dragonfly')"> 🪰+✈️ Dragonfly(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Red fox.png" alt="Red fox"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Red fox')"> 🦊Red fox(còn 100)
+    </a>
+</div>
+
+<div class="box">
+    <h2><img src="Spinosaurus.png" alt="Spinosaurus"></h2>
+    <a href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" onclick="copyMessage('Spinosaurus')"> 🦖Spinosaurus(còn 100)
+    </a>
+</div>
+
+<script>
+    // Hàm chung để copy tin nhắn
+    function copyMessage(itemName) {
+        const messageToCopy = `Mua ${itemName}`;
+        navigator.clipboard.writeText(messageToCopy.trim()).then(function () {
+            alert(`Đã Copy Tin Nhắn. Hãy nhắn: Mua ${itemName}`);
+        }, function (err) {
+            alert("❌ Lỗi copy: " + err);
+        });
+    }
+</script>
+
+<div class="footer">
+    <p>Admin: <b>Uông Nghĩa, Hoàng Bách</b></p>
+    <p>TikTok: <a href="https://www.tiktok.com/@unghia._" target="_blank">https://www.tiktok.com/@unghia._</a></p>
+</div>
+</body>
+</html>
