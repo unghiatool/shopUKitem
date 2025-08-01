@@ -78,7 +78,7 @@
         }
         .top-left-info {
             position: fixed;
-            top: 555px;
+            top: 620px;
             left: 10px;
             background: rgba(255, 255, 255, 0.8);
             padding: 12px 18px;
@@ -122,72 +122,82 @@
 
 <div class="box">
     <h2><img src="Kit xanh.png" alt="Corrupted kitsune"></h2>
-    <a onclick="handleButtonClick('Corrupted Kitsune', 'https://www.facebook.com/hoang.bach.601277')" class="button-with-icon"> Corrupted Kitsune(còn 100)
+    <h2>60.000đ</h2>
+    <a onclick="handleButtonClick('Corrupted Kitsune', 'https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon"> 🦊🟦Corrupted Kitsune
 </a>
 </div>
 
 <div class="box">
     <h2><img src="T-rex.png" alt="T-rex"></h2>
-    <a onclick="handleButtonClick('T-rex','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon"> 🦖T-rex(còn 100)
+    <h2>100.000đ</h2>
+    <a onclick="handleButtonClick('T-rex','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon"> 🦖T-rex
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Disco bee.png" alt="Disco bee"></h2>
-    <a onclick="copyMessage('Disco bee')" href="https://www.facebook.com/hoang.bach.601277" target="_blank" class="button-with-icon" > 🐝Disco bee(còn 100)
+    <h2>290.000đ</h2>
+    <a onclick="handleButton('Disco bee','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🐝Disco bee
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Queen bee.png" alt="Queen bee"></h2>
-    <a onclick="handleButtonClick('Queen bee','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🐝Queen bee(còn 100)
+    <h2>60.000đ</h2>
+    <a onclick="handleButtonClick('Queen bee','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🐝Queen bee
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Butterfly.png" alt="Butterfly"></h2>
-    <a onclick="handleButtonClick('Butterfly','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🦋Butterfly(còn 100)
+    <h2>190.000đ</h2>
+    <a onclick="handleButtonClick('Butterfly','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🦋Butterfly
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Panda.png" alt="Panda"></h2>
-    <a onclick="handleButtonClick('Panda','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🐼Panda(còn 100)
+    <h2>60.000đ</h2>
+    <a onclick="handleButtonClick('Panda','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🐼Panda
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Moon cat.png" alt="Moon cat"></h2>
-    <a onclick="handleButtonClick('Moon cat','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🐈‍⬛Moon cat(còn 100)
+    <h2>60.000đ</h2>
+    <a onclick="handleButtonClick('Moon cat','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🐈‍⬛Moon cat
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Dragonfly.png" alt="Dragonfly"></h2>
-    <a onclick="handleButtonClick('Dragonfly','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🪰+✈️ Dragonfly(còn 100)
+    <h2>150.000đ</h2>
+    <a onclick="handleButtonClick('Dragonfly','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🪰+✈️ Dragonfly
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Red fox.png" alt="Red fox"></h2>
-    <a onclick="handleButtonClick('Red fox','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🦊Red fox(còn 100)
+    <h2>50.000đ</h2>
+    <a onclick="handleButtonClick('Red fox','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🦊Red fox
     </a>
 </div>
 
 <div class="box">
     <h2><img src="Spinosaurus.png" alt="Spinosaurus"></h2>
-    <a onclick="handleButtonClick('Spinosaurus','https://www.facebook.com/hoang.bach.601277')" class="button-with-icon" > 🦖Spinosaurus(còn 100)
+    <h2>130.000đ</h2>
+    <a onclick="handleButtonClick('Spinosaurus','https://www.facebook.com/hoang.bach.601277','Còn 100')" class="button-with-icon" > 🦖Spinosaurus
     </a>
 </div>
 
 <script>
-    function handleButtonClick(itemName, url) {
+    function handleButtonClick(itemName, url, con) {
         const messageToCopy = `Mua ${itemName}`;
         navigator.clipboard.writeText(messageToCopy.trim()).then(function () {
-            alert(`✔️Đã Copy Tin Nhắn. Hãy nhắn: Mua ${itemName}`);
+            alert(`✔️Đã Copy Tin Nhắn. ${itemName} ${con} Con. Hãy nhắn: Mua ${itemName}`);
             window.open(url, '_blank');
         }, function (err) {
-            alert("❌ Lỗi copy: " + err + `. Hãy nhắn: Mua ${itemName}`);
+            alert("❌ Lỗi copy: " + err + `. ${itemName} ${con} Con. Hãy nhắn: Mua ${itemName}`);
             window.open(url, '_blank');
         });
     }
